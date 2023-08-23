@@ -46,7 +46,7 @@ return [
     // ----
 
     // Project name - shown in the window title
-    'project_name' => 'Backpack Admin Panel',
+    'project_name' => 'AutoWealth Digital Collaboration System',
 
     // Content of the HTML meta robots tag to prevent indexing and link following
     'meta_robots_content' => 'noindex, nofollow',
@@ -60,10 +60,11 @@ return [
     // The string below will be passed through the url() helper.
     // - default: '' (project root)
     // - alternative: 'admin' (the admin's dashboard)
-    'home_link' => '',
+    'home_link' => 'admin/',
 
     // Menu logo. You can replace this with an <img> tag if you have a logo.
-    'project_logo'   => '<b>Back</b>pack',
+    //'project_logo'   => '<b>Back</b>pack',
+    'project_logo'   => '<img width="100" height="50" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.instantloan.sg%2Fwp-content%2Fuploads%2Felementor%2Fthumbs%2FAutoWealth-pqzfei22bpt01q67k7rnotyoyzcsne7jmw04uhcf0g.jpg&f=1&nofb=1&ipt=1a34ffee1c1bad4340a5c07753932f778469989b01301eb66a1d9c7f4667654d&ipo=images"><b>Digital Collaboration System</b></img>',
 
     // Show / hide breadcrumbs on admin panel pages.
     'breadcrumbs' => true,
@@ -73,20 +74,21 @@ return [
     // ------
 
     // Developer or company name. Shown in footer.
-    'developer_name' => 'Cristian Tabacitu',
+    'developer_name' => 'AutoWealth',
 
     // Developer website. Link in footer. Type false if you want to hide it.
-    'developer_link' => 'http://tabacitu.ro',
+    'developer_link' => 'https://www.autowealth.sg',
 
     // Show powered by Laravel Backpack in the footer? true/false
-    'show_powered_by' => true,
+    'show_powered_by' => false,
 
     // ---------
     // DASHBOARD
     // ---------
 
     // Show "Getting Started with Backpack" info block?
-    'show_getting_started' => env('APP_ENV') == 'local',
+    //'show_getting_started' => env('APP_ENV') == 'local',
+    'show_getting_started' => false,
 
     // -------------
     // GLOBAL STYLES
