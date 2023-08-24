@@ -45,6 +45,19 @@ class TransactionCrudController extends CrudController
          * Columns can be defined using the fluent syntax:
          * - CRUD::column('price')->type('number');
          */
+
+        // CRUD::column('user_id')
+        //  ->label('User ID')
+        //  ->type('select')
+        //  ->model('App\Models\User')
+        //  ->attribute('name');
+        CRUD::column('user_id')
+        ->remove();
+        CRUD::column('customer_id')
+         ->label('Customer Name')
+         ->type('select')
+         ->model('App\Models\Customer')
+         ->attribute('name');
     }
 
     /**

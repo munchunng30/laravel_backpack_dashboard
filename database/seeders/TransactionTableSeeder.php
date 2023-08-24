@@ -19,7 +19,7 @@ class TransactionTableSeeder extends Seeder
         $customers = Customer::all();
 
         foreach($users as $user) {
-            $custToAdd = $customers->random(rand(1,10));
+            $custToAdd = $customers->random(rand(1,100));
 
             foreach($custToAdd as $customer) {
                 Transaction::create([
