@@ -3,13 +3,13 @@
 namespace App\Models;
 
 use App\Models\User;
+use App\Models\Customer;
 use Illuminate\Database\Eloquent\Model;
 use Backpack\CRUD\app\Models\Traits\CrudTrait;
-use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
-class Customer extends Model
+class Transaction extends Model
 {
     use CrudTrait;
     use HasFactory;
@@ -20,7 +20,7 @@ class Customer extends Model
     |--------------------------------------------------------------------------
     */
 
-    protected $table = 'customers';
+    protected $table = 'transactions';
     // protected $primaryKey = 'id';
     // public $timestamps = false;
     protected $guarded = ['id'];
@@ -38,13 +38,12 @@ class Customer extends Model
     | RELATIONS
     |--------------------------------------------------------------------------
     */
-    public function transactions() :HasMany
-    {
-        return $this->hasMany(Transaction::class); // 1 customer has many transactions. 
-    }
-
-    public function user(): BelongsTo {
+    public function user() : BelongsTo {
         return $this->belongsTo(User::class); 
+    }
+    
+    public function customer() : BelongsTo {
+        return $this->belongsTo(Customer::class); 
     }
     /*
     |--------------------------------------------------------------------------

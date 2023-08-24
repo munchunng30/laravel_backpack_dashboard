@@ -18,3 +18,16 @@ php artisan make:migration add_email_dob_in_customerss_table --table=customers
 
 ## create model factory for customer
 php artisan make:factory CustomerFactory
+
+## create transaction table
+php artisan make:migration:schema create_transactions_table --model=0 --schema="trx_type:string:unique,trx_amt:number"
+update the full details of the transaction migrations.
+php artisan migrate
+
+## using backpack curd command to create transaction crud
+php artisan backpack:crud transaction #use singular, not plural
+
+## create transasction seeder
+php artisan make:seeder TransactionTableSeeder
+## run transaction seeder
+php artisan db:seed --class=TransactionTableSeeder
