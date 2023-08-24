@@ -95,13 +95,13 @@ class CustomerCrudController extends CrudController
         CRUD::column('add_line4')
             ->type('text')
             ->label('Address Line 4');
-        CRUD::column('postcode')
+        CRUD::column('add_postcode')
             ->type('text')
             ->label('Postcode');
-        CRUD::column('state')
+        CRUD::column('add_state')
             ->type('text')
             ->label('State'); 
-        CRUD::column('country')
+        CRUD::column('add_country')
             ->type('text')
             ->label('Country');       
     }
@@ -175,13 +175,13 @@ class CustomerCrudController extends CrudController
                 'size'=>80
             ])
             ->label('Address Line 4');
-        CRUD::field('postcode')
+        CRUD::field('add_postcode')
             ->type('text')
             ->attributes([
                 'size'=>5
             ])
             ->label('Postcode');
-        CRUD::field('state')
+        CRUD::field('add_state')
             ->type('select_from_array')
             ->options([
                 'kualalumpur'=>'Kuala Lumpur',
@@ -199,7 +199,7 @@ class CustomerCrudController extends CrudController
                 ])
             ->inline(true)
             ->label('State');
-        CRUD::field('country')
+        CRUD::field('add_country')
             ->type('text')
             ->attributes([
                 'size'=>50

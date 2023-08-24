@@ -15,3 +15,6 @@ php artisan backpack:crud customer #use singular, not plural
 
 ## update migration table after add in new columns
 php artisan make:migration add_email_dob_in_customerss_table --table=customers
+
+## create model factory for customer
+php artisan make:factory CustomerFactory

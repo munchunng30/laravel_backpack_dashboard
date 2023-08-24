@@ -28,7 +28,7 @@ $widgets['before_content'][] = [
         'value'       => 'RM 750,000.00',
         'description' => 'Total AUM',
         'progress'    => 75, // integer
-        'hint'        => 'RM 250,000 more until next milestone.',
+        'hint'        => 'RM 250,000 until next milestone.',
         ],
         ['type' => 'progress_white', 
         'class'       => 'card text-white bg-secondary mb-2',
