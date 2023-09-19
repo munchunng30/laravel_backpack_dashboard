@@ -2,7 +2,7 @@
 https://backpackforlaravel.com/docs/6.x/installation
 
 ## sample to create crud for user table
-php artisan backpack:crud user
+php artisan backpack:9crud user
 
 ## using generator to generate migration and model
 ## or can use the default laravel command to do the same. 
@@ -31,3 +31,8 @@ php artisan backpack:crud transaction #use singular, not plural
 php artisan make:seeder TransactionTableSeeder
 ## run transaction seeder
 php artisan db:seed --class=TransactionTableSeeder
+
+## deploy in apache
+https://www.howtoforge.com/tutorial/install-laravel-on-ubuntu-for-apache/
+
+
