@@ -35,4 +35,5 @@ php artisan db:seed --class=TransactionTableSeeder
 ## deploy in apache
 https://www.howtoforge.com/tutorial/install-laravel-on-ubuntu-for-apache/
 
+##
 
